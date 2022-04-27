@@ -1,4 +1,6 @@
+import { Heading } from '@chakra-ui/react'
 import * as React from "react"
+import Header from '../components/Header'
 
 // styles
 const pageStyles = {
@@ -129,6 +131,7 @@ const links = [
 const IndexPage = () => {
   return (
     <main style={pageStyles}>
+      <Header />
       <title>Home Page</title>
       <h1 style={headingStyles}>
         Congratulations
@@ -136,6 +139,7 @@ const IndexPage = () => {
         <span style={headingAccentStyles}>— you just made a Gatsby site! </span>
         🎉🎉🎉
       </h1>
+      <Heading>DDD</Heading>
       <p style={paragraphStyles}>
         Edit <code style={codeStyles}>src/pages/index.tsx</code> to see this page
         update in real-time. 😎
