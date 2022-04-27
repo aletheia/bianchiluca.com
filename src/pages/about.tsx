@@ -1,16 +1,17 @@
 import {Container, Heading} from '@chakra-ui/react';
-import * as React from 'react';
+import {Link} from 'gatsby';
+import React, {FC} from 'react';
 import Header from '../components/Header';
 import PageLayout from '../components/PageLayout';
 
-const IndexPage = () => {
+const AboutPage: FC = () => {
   return (
     <>
       <PageLayout>
-        <Heading>Hello, world!</Heading>
+        <Heading>About me</Heading>
       </PageLayout>
     </>
   );
 };
 
-export default IndexPage;
+export default AboutPage;
