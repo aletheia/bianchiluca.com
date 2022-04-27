@@ -9,9 +9,7 @@ import {
 import {Link as NavigationLink} from 'gatsby';
 import React, {FC} from 'react';
 
-const siteName = 'bianchiluca.com';
-
-const Header: FC = () => {
+const Header: FC<{siteName: string}> = ({siteName}) => {
   return (
     <>
       <Container maxWidth="100%">
@@ -21,6 +19,7 @@ const Header: FC = () => {
           <Spacer />
 
           <NavigationLink to="/">Home</NavigationLink>
+          <NavigationLink to="/blog">Blog</NavigationLink>
           <NavigationLink to="/about">About</NavigationLink>
         </HStack>
       </Container>
